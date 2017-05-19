@@ -1,8 +1,8 @@
 # Copyright (C) Microsoft Corporation. All rights reserved.
 # Licensed under the MIT license. See LICENSE.txt in the project root for license information.
 
-# Require .NET Framework on the latest image cached by AppVeyor
-FROM microsoft/windowsservercore@sha256:9b736c12978e3475cec83e93a12c8b3be2ba445eb733902827e1ccb9f499bc18
+# Based on latest image cached by AppVeyor: https://www.appveyor.com/docs/build-environment/#image-updates
+FROM microsoft/windowsservercore:10.0.14393.1198
 SHELL ["powershell.exe", "-ExecutionPolicy", "Bypass", "-Command"]
 
 # Download and register current query APIs
