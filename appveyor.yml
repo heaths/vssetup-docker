@@ -9,7 +9,7 @@ environment:
   PASSWORD:
     secure: LcG3EvqYe3nsuUOe6wqviw==
 build_script:
-  - docker build -t heaths/vssetup:%API_VERSION% --build-arg API_VERSION=%API_VERSION% .
+  - docker build -t heaths/vssetup:%API_VERSION% .
   - docker tag heaths/vssetup:%API_VERSION% heaths/vssetup:latest
 deploy_script:
   - docker login -u heaths -p %PASSWORD%
