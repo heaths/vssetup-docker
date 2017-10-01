@@ -2,7 +2,8 @@
 # Licensed under the MIT license. See LICENSE.txt in the project root for license information.
 
 # Based on latest image cached by AppVeyor: https://www.appveyor.com/docs/build-environment/#image-updates
-FROM microsoft/windowsservercore:10.0.14393.1198
+# FROM microsoft/windowsservercore:10.0.14393.1593
+FROM microsoft/windowsservercore@sha256:c281f2c09c9446f1896806933013a350f19db8f5a009e633ebd9701c470de35b
 SHELL ["powershell.exe", "-ExecutionPolicy", "Bypass", "-Command"]
 
 # Download and register current query APIs
