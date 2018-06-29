@@ -3,7 +3,7 @@
 
 # Based on latest image cached by AppVeyor: https://www.appveyor.com/docs/build-environment/#image-updates
 # FROM microsoft/windowsservercore:10.0.14393.2007
-FROM microsoft/windowsservercore@sha256:ebdf8f069e8941803a19bb3da4d70070c9d3b2f77c38476a9132022bab6e59a0
+FROM microsoft/windowsservercore@sha256:c06b4bfaf634215ea194e6005450740f3a230b27c510cf8facab1e9c678f3a99
 SHELL ["powershell.exe", "-ExecutionPolicy", "Bypass", "-Command"]
 
 ENV INSTALLER_VERSION=1.14.190.31519 \
