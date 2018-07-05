@@ -2,7 +2,6 @@
 # Licensed under the MIT license. See LICENSE.txt in the project root for license information.
 
 # Based on latest image cached by AppVeyor: https://www.appveyor.com/docs/build-environment/#image-updates
-# FROM microsoft/windowsservercore:10.0.14393.2007
 FROM microsoft/windowsservercore@sha256:c06b4bfaf634215ea194e6005450740f3a230b27c510cf8facab1e9c678f3a99
 SHELL ["powershell.exe", "-ExecutionPolicy", "Bypass", "-Command"]
 
